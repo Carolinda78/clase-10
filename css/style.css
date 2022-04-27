@@ -36,7 +36,7 @@
 }
 header{
     grid-area: nav;
-    background: #333;
+    background-image: linear-gradient(to right, red, orange, yellow, blue, blueviolet, pink,black, brown);
     position: fixed;
     left: 0;
     width: 100%;
@@ -187,7 +187,35 @@ h1{
     flex-direction: column;
     font-size: 80px;
     text-align: center;
-    color: blue;
+    animation-name: noso;
+    animation-duration: 10s;
+    /* animation-iteration-count: infinite; */
+    animation-iteration-count: ease-in;
+    animation-delay: 3s;
+}
+@keyframes noso {
+    0%{
+        color: rgb(255, 0, 200);
+      font-size: 32px;
+    }
+    25%{
+        /* background-image: linear-gradient(red,orange,yellow); */
+        color: rgb(43, 226, 73);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 100px;
+    }
+    50%{
+        color: cyan;
+        transform: rotate(35deg);
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: darkorchid;
+        font-size: 5px;background-color: darkgray;
+    }
+}
 }
 .nos{
     display: flex;
